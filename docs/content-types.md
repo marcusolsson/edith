@@ -104,4 +104,4 @@ To create a course:
 
 ## Learn more
 
-To learn more about how to write Markdown content, check out [Formatting text with Markdown](/modules/formatting-text).
+To learn more about how to write Markdown content, check out [Formatting text with Markdown](/edith/en/modules/formatting-text/).
