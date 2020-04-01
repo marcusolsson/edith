@@ -40,9 +40,7 @@ export default props => {
         <ElevationScroll {...props}>
           <StyledAppBar>
             <Toolbar>
-              <Link to="/">
-                <Logo />
-              </Link>
+              <Logo />
             </Toolbar>
           </StyledAppBar>
         </ElevationScroll>

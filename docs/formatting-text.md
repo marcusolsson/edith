@@ -163,12 +163,12 @@ results in:
 ## Images
 
 ```md
-![red apple fruit on four pyle books](/sample.jpg)
+![red apple fruit on four pyle books](./sample.jpg)
 ```
 
 results in:
 
-![red apple fruit on four pyle books](/sample.jpg)
+![red apple fruit on four pyle books](sample.jpg)
 
 ## Tables
 

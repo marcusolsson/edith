@@ -6,7 +6,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: "Edith",
+    title: "Edith.",
     hero: {
       title: "The open learning platform",
       description:
@@ -38,11 +38,18 @@ module.exports = {
         plugins: [`gatsby-yaml-full-markdown`],
       },
     },
-    `gatsby-transformer-remark`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 960,
+            },
+          },
           {
             resolve: "gatsby-remark-code-titles",
           },
@@ -53,4 +60,5 @@ module.exports = {
       },
     },
   ],
+  pathPrefix: "/edith",
 }

@@ -1,10 +1,23 @@
 import React from "react"
 
-import { useTheme } from "@material-ui/core/styles"
+import { makeStyles } from "@material-ui/core/styles"
 import { useStaticQuery, graphql } from "gatsby"
 
+import Typography from "@material-ui/core/Typography"
+import Link from "./Link"
+
+const useStyles = makeStyles(theme => ({
+  root: {
+    color: theme.palette.text.primary,
+    "& a": {
+      color: theme.palette.text.primary,
+      textDecoration: "none",
+    },
+  },
+}))
+
 export default props => {
-  const theme = useTheme()
+  const classes = useStyles()
   const data = useStaticQuery(
     graphql`
       query {
@@ -18,12 +31,8 @@ export default props => {
   )
 
   return (
-    <img
-      src={theme.palette.type === "dark" ? "/logo-light.svg" : "/logo-dark.svg"}
-      alt={data.site.siteMetadata.title}
-      style={{
-        height: "20px",
-      }}
-    />
+    <Typography variant="h3" className={classes.root}>
+      <Link to="/">{data.site.siteMetadata.title}</Link>
+    </Typography>
   )
 }
