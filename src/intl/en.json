@@ -1,0 +1,36 @@
+{
+  "error": {
+    "404": "Couldn't find what you were looking for"
+  },
+  "time": {
+    "minute": "{count} min",
+    "hour": "{count} hr"
+  },
+  "text": {
+    "whatYouWillLearn": "What you'll learn",
+    "search": "Search…",
+    "course": "Course",
+    "module": "Module",
+    "start": "Start",
+    "seeLess": "See less",
+    "seeMore": "See more",
+    "builtByDiscere": "Built with Discere"
+  },
+  "browse": {
+    "types": "Types",
+    "topics": "Subjects and topics",
+    "anyType": "Any type",
+    "anyTopic": "Any topic",
+    "anyAudience": "Any audience",
+    "anyDifficulty": "Any difficulty",
+    "noResults": "No results found"
+  },
+  "course": {
+    "curriculum": "Curriculum"
+  },
+  "unit": {
+    "back": "Back",
+    "next": "Next",
+    "done": "Done"
+  }
+}

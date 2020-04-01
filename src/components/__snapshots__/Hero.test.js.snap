@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero renders correctly 1`] = `
+<div
+  className="makeStyles-root-1"
+>
+  <h1
+    className="MuiTypography-root MuiTypography-h1"
+  >
+    Foo
+  </h1>
+  <p
+    className="MuiTypography-root makeStyles-description-2 MuiTypography-body1 MuiTypography-paragraph"
+  >
+    Bar
+  </p>
+</div>
+`;

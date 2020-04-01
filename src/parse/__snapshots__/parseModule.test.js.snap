@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parse parses module titles 1`] = `
+Object {
+  "title": "Module title",
+  "units": Array [
+    Object {
+      "components": Array [
+        <WithStyles(ForwardRef(Typography))
+          paragraph={true}
+        >
+          This is about sheep.
+        </WithStyles(ForwardRef(Typography))>,
+        <WithStyles(ForwardRef(Typography))
+          paragraph={true}
+        >
+          Lots of 
+          <em>
+            sheep
+          </em>
+        </WithStyles(ForwardRef(Typography))>,
+      ],
+      "title": "Introduction",
+    },
+    Object {
+      "components": Array [],
+      "title": "Do this",
+    },
+    Object {
+      "components": Array [
+        <ul>
+          <li />
+          
+
+          <li />
+          
+
+          <li />
+        </ul>,
+      ],
+      "title": "Do that",
+    },
+  ],
+}
+`;

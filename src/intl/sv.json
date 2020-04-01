@@ -1,0 +1,36 @@
+{
+  "error": {
+    "404": "Kunde inte hitta vad du letade efter"
+  },
+  "time": {
+    "minute": "{count} min",
+    "hour": "{count} tim"
+  },
+  "text": {
+    "whatYouWillLearn": "Vad du kommer att lära dig",
+    "search": "Sök…",
+    "course": "Kurs",
+    "module": "Modul",
+    "start": "Starta",
+    "seeLess": "Se mindre",
+    "seeMore": "Se mer",
+    "builtByDiscere": "Byggd med Discere"
+  },
+  "browse": {
+    "types": "Typer",
+    "topics": "Ämnen",
+    "anyType": "Alla typer",
+    "anyTopic": "Alla ämnen",
+    "anyAudience": "Alla målgrupper",
+    "anyDifficulty": "Alla nivåer",
+    "noResults": "Inga resultat"
+  },
+  "course": {
+    "curriculum": "Kursöversikt"
+  },
+  "unit": {
+    "back": "Tillbaka",
+    "next": "Nästa",
+    "done": "Färdig"
+  }
+}
