@@ -5,7 +5,7 @@ import Container from "@material-ui/core/Container"
 import Toolbar from "@material-ui/core/Toolbar"
 
 import StyledAppBar from "./StyledAppBar"
-import Link from "./Link"
+
 import Logo from "./Logo"
 import ElevationScroll from "./ElevationScroll"
 import BaseLayout from "./BaseLayout"
