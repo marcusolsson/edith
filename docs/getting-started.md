@@ -3,7 +3,7 @@ type: Course
 difficulty: Beginner
 audience: ["Educator"]
 topics: ["Getting started"]
-curriculum: ["/formatting-text/"]
+curriculum: ["/content-types/", "/formatting-text/"]
 ---
 
 # Getting started with Edith
