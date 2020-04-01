@@ -9,7 +9,7 @@ import GlobalStyles from "./GlobalStyles"
 import useMediaQuery from "@material-ui/core/useMediaQuery"
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles"
 
-import teal from "@material-ui/core/colors/teal"
+import blue from "@material-ui/core/colors/blue"
 
 export default ({ children }) => {
   const data = useStaticQuery(
@@ -97,7 +97,7 @@ export default ({ children }) => {
         },
         palette: {
           type: prefersDarkMode ? "dark" : "light",
-          primary: teal,
+          primary: blue,
         },
       }),
     [prefersDarkMode]
