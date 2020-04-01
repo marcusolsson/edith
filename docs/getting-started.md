@@ -1,5 +1,5 @@
 ---
-type: Course
+type: course
 difficulty: Beginner
 audience: ["Educator"]
 topics: ["Getting started"]

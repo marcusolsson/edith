@@ -52,7 +52,7 @@ export default props => {
   module.audience = node.frontmatter.audience
   module.difficulty = node.frontmatter.difficulty
   module.topics = node.frontmatter.topics
-  module.type = "Module"
+  module.type = "module"
   module.fields = { slug: node.fields.slug }
 
   const unitIndex = props.pageContext.index
@@ -87,11 +87,9 @@ export default props => {
         </Stepper>
       }
     >
-      <Paper className={classes.paper} key="1">
+      <Paper className={classes.paper}>
         <Typography variant="h1">{unit.title}</Typography>
-        {unit.components.map(component => {
-          return component
-        })}
+        {unit.components}
       </Paper>
 
       <div className={classes.buttons}>

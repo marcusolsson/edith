@@ -1,5 +1,5 @@
 ---
-type: Module
+type: module
 difficulty: Beginner
 audience: ["Educator"]
 topics: ["Content"]
@@ -25,7 +25,7 @@ To create a module:
 1. Add the following text at the top of the file:
    ```
    ---
-   type: Module
+   type: module
    ---
    ```
    This part is called _front matter_ and allows you to define aspects of the module.
@@ -54,7 +54,7 @@ To create a module:
 
 ```text:title=building-a-treehouse.md
 ---
-type: Module
+type: module
 ---
 
 # Building a tree house
@@ -82,7 +82,7 @@ To create a course:
 1. Add the following text at the top of the file:
    ```
    ---
-   type: Course
+   type: course
    ---
    ```
    This part is called _front matter_ and allows you to define aspects of the course.
@@ -96,7 +96,7 @@ To create a course:
    ```
 1. In the front matter, add a `curriculum` property:
    ```
-   type: Course
+   type: course
    curriculum: ["/building-a-treehouse/", "/build-a-trampoline/"]
    ```
    The id of each module is the same as the filename (without the `.md`).

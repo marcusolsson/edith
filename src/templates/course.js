@@ -84,7 +84,7 @@ export const query = graphql`
       }
     }
     modules: allMarkdownRemark(
-      filter: { frontmatter: { type: { eq: "Module" } } }
+      filter: { frontmatter: { type: { eq: "module" } } }
     ) {
       edges {
         node {

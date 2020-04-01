@@ -1,5 +1,5 @@
 ---
-type: Module
+type: module
 difficulty: Beginner
 audience: ["Educator"]
 topics: ["Content"]

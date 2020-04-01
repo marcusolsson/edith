@@ -11,7 +11,7 @@ const useStyles = makeStyles(theme => ({
     color: theme.palette.text.primary,
     [theme.breakpoints.up("sm")]: {
       width: props => (props.drawer ? `calc(100% - ${drawerWidth}px)` : null),
-      marginLeft: props => (props.drawer ? drawerWidth : null),
+      marginLeft: props => (props.drawer === "true" ? drawerWidth : null),
     },
   },
 }))

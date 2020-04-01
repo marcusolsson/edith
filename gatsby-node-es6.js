@@ -33,7 +33,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const result = await graphql(`
     query {
       courses: allMarkdownRemark(
-        filter: { frontmatter: { type: { eq: "Course" } } }
+        filter: { frontmatter: { type: { eq: "course" } } }
       ) {
         edges {
           node {
@@ -45,7 +45,7 @@ exports.createPages = async ({ graphql, actions }) => {
         }
       }
       modules: allMarkdownRemark(
-        filter: { frontmatter: { type: { eq: "Module" } } }
+        filter: { frontmatter: { type: { eq: "module" } } }
       ) {
         edges {
           node {

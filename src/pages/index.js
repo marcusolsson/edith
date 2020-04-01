@@ -78,10 +78,7 @@ export default ({ data }) => {
     })
 
   // Build filters
-  const allTypes = [
-    intl.formatMessage({ id: "text.course" }),
-    intl.formatMessage({ id: "text.module" }),
-  ]
+  const allTypes = ["course", "module"]
   const allTopics = [
     ...new Set(allNodes.flatMap(node => node.frontmatter.topics)),
   ]
@@ -165,7 +162,7 @@ export default ({ data }) => {
               <MenuItem value={defaults.type}>{defaults.type}</MenuItem>
               {allTypes.map((type, index) => (
                 <MenuItem value={type} key={index}>
-                  {type}
+                  {intl.formatMessage({ id: `text.${type}` })}
                 </MenuItem>
               ))}
             </Select>

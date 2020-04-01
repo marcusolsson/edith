@@ -44,10 +44,10 @@ export default props => {
 
   let slugPrefix
   switch (props.content.type) {
-    case intl.formatMessage({ id: "text.course" }):
+    case "course":
       slugPrefix = "/courses"
       break
-    case intl.formatMessage({ id: "text.module" }):
+    case "module":
       slugPrefix = "/modules"
       break
     default:
@@ -70,7 +70,7 @@ export default props => {
             className={classes.typographyContent}
             paragraph
           >
-            {props.content.type}
+            {intl.formatMessage({ id: `text.${props.content.type}` })}
           </Typography>
           <Typography variant="body2" paragraph>
             {meta}

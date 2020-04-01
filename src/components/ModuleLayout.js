@@ -81,7 +81,7 @@ export default props => {
     <BaseLayout>
       <div className={classes.root}>
         <ElevationScroll {...props}>
-          <StyledAppBar drawer={true}>
+          <StyledAppBar drawer={"true"}>
             <Toolbar>
               <IconButton
                 color="inherit"
