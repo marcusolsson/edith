@@ -3,7 +3,8 @@ import visit from "unist-util-visit"
 import map from "unist-util-map"
 import rehypeReact from "rehype-react"
 
-import Link from "@material-ui/core/Link"
+import Link from "../components/MarkdownLink"
+
 import Typography from "@material-ui/core/Typography"
 import Table from "@material-ui/core/Table"
 import TableHead from "@material-ui/core/TableHead"
@@ -81,6 +82,13 @@ export default ast => {
               properties: {
                 ...n.properties,
                 paragraph: true,
+              },
+            })
+          } else if (n.tagName === "a") {
+            return Object.assign({}, n, {
+              properties: {
+                ...n.properties,
+                to: n.properties.href,
               },
             })
           } else if (n.tagName === "th") {
