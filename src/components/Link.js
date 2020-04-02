@@ -1,6 +1,7 @@
 import React from "react"
 
-import { Link as IntlLink } from "gatsby-plugin-intl"
+import MuiLink from "@material-ui/core/Link"
+import { Link as GatsbyLink } from "gatsby-plugin-intl"
 
 /**
  * Link is a wrapper around ReachLink -> GatsbyLink -> IntlLink that forwards
@@ -9,9 +10,7 @@ import { Link as IntlLink } from "gatsby-plugin-intl"
  * https://reactjs.org/docs/forwarding-refs.html#forwarding-refs-to-dom-components
  */
 const Link = React.forwardRef((props, ref) => (
-  <IntlLink {...props} innerRef={ref}>
-    {props.children}
-  </IntlLink>
+  <MuiLink component={GatsbyLink} ref={ref} {...props} />
 ))
 
 export default Link

@@ -3,7 +3,6 @@ import visit from "unist-util-visit"
 import map from "unist-util-map"
 import rehypeReact from "rehype-react"
 
-import Link from "@material-ui/core/Link"
 import Typography from "@material-ui/core/Typography"
 import Table from "@material-ui/core/Table"
 import TableHead from "@material-ui/core/TableHead"
@@ -11,6 +10,8 @@ import TableBody from "@material-ui/core/TableBody"
 import TableRow from "@material-ui/core/TableRow"
 import TableCell from "@material-ui/core/TableCell"
 import Divider from "@material-ui/core/Divider"
+
+import Link from "../components/Link"
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
