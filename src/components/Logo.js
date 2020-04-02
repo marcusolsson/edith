@@ -13,6 +13,8 @@ const useStyles = makeStyles(theme => ({
       color: theme.palette.text.primary,
       textDecoration: "none",
     },
+    fontSize: 24,
+    fontWeight: 600,
   },
 }))
 
@@ -31,7 +33,7 @@ export default props => {
   )
 
   return (
-    <Typography variant="h3" className={classes.root}>
+    <Typography className={classes.root}>
       <Link to="/">{data.site.siteMetadata.title}</Link>
     </Typography>
   )
