@@ -299,3 +299,38 @@ My favorite search engine is [Duck Duck Go](https://duckduckgo.com "The best sea
 results in:
 
 My favorite search engine is [Duck Duck Go](https://duckduckgo.com "The best search engine for privacy").
+
+## Maths
+
+You can write maths in your Markdown [using LaTeX mathematical expressions.](https://www.overleaf.com/learn/latex/mathematical_expressions) 
+
+### Inline
+Write an inline expression by wrapping it in `$`.  
+```md
+Lift($L$) can be determined by Lift Coefficient ($C_L$) like the following equation.
+
+```
+
+Lift($L$) can be determined by Lift Coefficient ($C_L$) like the following equation.
+
+###Block
+Write a block expression by wrapping it in `$$`.
+```md
+$$
+L = \frac{1}{2} \rho v^2 S C_L
+$$
+```
+
+$$
+L = \frac{1}{2} \rho v^2 S C_L
+$$
+
+```md
+$$
+\oint_C \textbf{E} \cdot dl = - \int_S \frac{\partial\textbf{B}}{\partial t} \cdot d\textbf{s}
+$$
+```
+
+$$
+\oint_C \textbf{E} \cdot dl = - \int_S \frac{\partial\textbf{B}}{\partial t} \cdot d\textbf{s}
+$$

@@ -56,6 +56,9 @@ module.exports = {
           {
             resolve: `gatsby-remark-prismjs`,
           },
+          {
+            resolve: `gatsby-remark-katex`,
+          }
         ],
       },
     },

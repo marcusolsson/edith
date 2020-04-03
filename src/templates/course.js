@@ -13,6 +13,7 @@ import ModuleCard from "../components/ModuleCard"
 
 import parseCourse from "../parse/parseCourse"
 import parseModule from "../parse/parseModule"
+import "katex/dist/katex.min.css"
 
 /**
  * Template for a course page.

@@ -15,6 +15,8 @@ import Link from "../components/Link"
 import Paper from "@material-ui/core/Paper"
 import Typography from "@material-ui/core/Typography"
 
+import "katex/dist/katex.min.css"
+
 const useStyles = makeStyles(theme => ({
   buttons: {
     display: "flex",
