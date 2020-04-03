@@ -3639,7 +3639,7 @@ command-exists@^1.2.4:
   resolved "https://registry.yarnpkg.com/command-exists/-/command-exists-1.2.8.tgz#715acefdd1223b9c9b37110a149c6392c2852291"
   integrity sha512-PM54PkseWbiiD/mMsbvW351/u+dafwTJ0ye2qB60G1aGQP9j3xK2gmMDc+R34L3nDtx4qMCitXT75mkbkGJDLw==
 
-commander@^2.11.0, commander@^2.18.0, commander@^2.20.0:
+commander@^2.11.0, commander@^2.18.0, commander@^2.19.0, commander@^2.20.0:
   version "2.20.3"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
   integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
@@ -6244,6 +6244,15 @@ gatsby-remark-images@^3.2.1:
     query-string "^6.11.1"
     unist-util-select "^1.5.0"
     unist-util-visit-parents "^2.1.2"
+
+gatsby-remark-katex@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-katex/-/gatsby-remark-katex-3.2.1.tgz#b9b6707fd3894c5fe5c74d329072070b3c563f9c"
+  integrity sha512-r75ToIEto//BSWSe/u2SdTpHah5Hl3UeeuA1PaaVkDz9IDM4nhuH06opokrjRnVi33/L4uxUxquvAUh7mviyjA==
+  dependencies:
+    "@babel/runtime" "^7.8.7"
+    remark-math "^1.0.6"
+    unist-util-visit "^1.4.1"
 
 gatsby-remark-prismjs@^3.4.1:
   version "3.4.1"
@@ -8982,6 +8991,13 @@ jsx-ast-utils@^2.2.1, jsx-ast-utils@^2.2.3:
   dependencies:
     array-includes "^3.0.3"
     object.assign "^4.1.0"
+
+katex@^0.11.1:
+  version "0.11.1"
+  resolved "https://registry.yarnpkg.com/katex/-/katex-0.11.1.tgz#df30ca40c565c9df01a466a00d53e079e84ffaa2"
+  integrity sha512-5oANDICCTX0NqYIyAiFCCwjQ7ERu3DQG2JFHLbYOf+fXaMoH8eg/zOq5WSYJsKMi/QebW+Eh3gSM+oss1H/bww==
+  dependencies:
+    commander "^2.19.0"
 
 keyv@3.0.0:
   version "3.0.0"
@@ -12181,6 +12197,13 @@ remark-html@^10.0.0:
     mdast-util-to-hast "^6.0.0"
     xtend "^4.0.1"
 
+remark-math@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/remark-math/-/remark-math-1.0.6.tgz#49eb3dd15d298734c9ae21673115389793af4d1b"
+  integrity sha512-I43wU/QOQpXvVFXKjA4FHp5xptK65+5F6yolm8+69/JV0EqSOB64wURUZ3JK50JtnTL8FvwLiH2PZ+fvsBxviA==
+  dependencies:
+    trim-trailing-lines "^1.1.0"
+
 remark-parse@^6.0.0, remark-parse@^6.0.3:
   version "6.0.3"
   resolved "https://registry.yarnpkg.com/remark-parse/-/remark-parse-6.0.3.tgz#c99131052809da482108413f87b0ee7f52180a3a"
@@ -14001,7 +14024,7 @@ trim-repeated@^1.0.0:
   dependencies:
     escape-string-regexp "^1.0.2"
 
-trim-trailing-lines@^1.0.0:
+trim-trailing-lines@^1.0.0, trim-trailing-lines@^1.1.0:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/trim-trailing-lines/-/trim-trailing-lines-1.1.3.tgz#7f0739881ff76657b7776e10874128004b625a94"
   integrity sha512-4ku0mmjXifQcTVfYDfR5lpgV7zVqPg6zV9rdZmwOPqq0+Zq19xDqEgagqVbc4pOOShbncuAOIs59R3+3gcF3ZA==
