@@ -1,7 +1,8 @@
 # Edith
 
 [![Actions Status](https://github.com/marcusolsson/edith/workflows/CI/badge.svg)](https://github.com/marcusolsson/edith/actions)
-[![License MIT](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](LICENSE)
+[![License MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
+[![PRs welcome!](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contribute)
 
 Edith is a free and open source learning platform based on [Gatsby](https://www.gatsbyjs.org/) and [Material UI](https://material-ui.com/).
 
