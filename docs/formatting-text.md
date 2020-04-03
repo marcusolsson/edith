@@ -313,7 +313,7 @@ Lift($L$) can be determined by Lift Coefficient ($C_L$) like the following equat
 
 Lift($L$) can be determined by Lift Coefficient ($C_L$) like the following equation.
 
-###Block
+### Block
 Write a block expression by wrapping it in `$$`.
 ```md
 $$
