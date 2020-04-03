@@ -53,7 +53,9 @@ To get started writing code:
 
 ## Mentorship
 
-If you're excited about the idea of a open learning platform, but you don't yet feel you have the skills to contribute, I'd like to help you get there in any way I can.
+If you're excited about the idea of a open learning platform, but you don't yet feel you have the skills to contribute, I'd like to help you get there. 
+
+If you have any questions, either [submit a GitHub issue](https://github.com/marcusolsson/edith/issues/new), or reach out to me through the channels listed on the bottom of [my web site](https://marcus.se.net).
 
 ## License
 
