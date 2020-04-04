@@ -1,5 +1,5 @@
 {
-  "name": "discere",
+  "name": "edith",
   "private": true,
   "description": "An open learning platform",
   "version": "0.1.0",
@@ -62,9 +62,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/marcusolsson/discere"
+    "url": "https://github.com/marcusolsson/edith"
   },
   "bugs": {
-    "url": "https://github.com/marcusolsson/discere"
+    "url": "https://github.com/marcusolsson/edith/issues"
   }
 }
