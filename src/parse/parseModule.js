@@ -4,6 +4,7 @@ import map from "unist-util-map"
 import rehypeReact from "rehype-react"
 
 import Link from "../components/MarkdownLink"
+import CodeBlock from "../components/CodeBlock"
 
 import Typography from "@material-ui/core/Typography"
 import Table from "@material-ui/core/Table"
@@ -31,6 +32,7 @@ const renderAst = new rehypeReact({
     td: TableCell,
     th: TableCell,
     hr: Divider,
+    pre: CodeBlock,
   },
 }).Compiler
 

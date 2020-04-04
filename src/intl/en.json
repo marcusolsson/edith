@@ -14,7 +14,8 @@
     "start": "Start",
     "seeLess": "See less",
     "seeMore": "See more",
-    "builtByDiscere": "Built with Discere"
+    "copy": "Copy",
+    "copied": "Copied"
   },
   "browse": {
     "types": "Types",
