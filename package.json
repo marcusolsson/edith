@@ -12,7 +12,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "jest",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "build-prefix": "gatsby build --prefix-paths"
   },
   "dependencies": {
     "@babel/core": "^7.9.0",
