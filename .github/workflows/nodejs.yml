@@ -24,6 +24,10 @@ jobs:
       run: yarn install
     - name: Build
       run: yarn build --prefix-paths
-    - name: Deploy demo
-      run: gh-pages -d public -r https://${{ secrets.PERSONAL_TOKEN }}@github.com/marcusolsson/edith.git
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        ACCESS_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: public
 
