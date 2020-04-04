@@ -25,5 +25,5 @@ jobs:
     - name: Build
       run: yarn build --prefix-paths
     - name: Deploy demo
-      run: gh-pages -d public -r https://${{ secrets.PERSONAL_TOKEN }}@github.com/marcusolsson/edith.git"
+      run: gh-pages -d public -r https://${{ secrets.PERSONAL_TOKEN }}@github.com/marcusolsson/edith.git
 
