@@ -10,6 +10,35 @@ Edith is a free and open source learning platform based on [Gatsby](https://www.
 
 **Important**: Edith is still in early development and is not production-ready. **Use at your own risk**.
 
+## Start using Edith
+
+Unfortunately, Edith is only a [Gatsby starter](https://www.gatsbyjs.org/docs/starters/), which means you won't be able to update your site with the latest features in Edith. From the [Gatsby docs](https://www.gatsbyjs.org/docs/themes/converting-a-starter/):
+
+> A starter is a boilerplate Gatsby site that users can copy and customize. Once modified, a starter maintains no connection to its source.
+
+To address this, I'm planning to convert Edith into a [Gatsby theme](https://www.gatsbyjs.org/docs/themes/what-are-gatsby-themes/). For updates on this, check out [the issue](https://github.com/marcusolsson/edith/issues/15).
+
+For now though, here's how you create a new site using Edith as a starter:
+
+1. **Create an Edith site**
+   
+   Use the Gatsby CLI to create a new site, based on Edith:
+   
+   ```
+   gatsby new my-edith-starter https://github.com/marcusolsson/edith
+   ```
+
+1. **Start developing**
+   
+   Navigate to your new site's directory and start the site:
+   
+   ```
+   cd my-edith-starter/
+   gatsby develop
+   ```
+   
+1. **Navigate to http://localhost:8000**
+
 ## Contribute
 
 Edith welcomes contributions! This section lists some examples of how you can help. If you want to help in other ways than the ones listed below, [let me know](https://github.com/marcusolsson/edith/issues/new)!
