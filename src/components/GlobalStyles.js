@@ -21,6 +21,7 @@ const useStyles = makeStyles(theme => ({
         margin: "0 auto",
       },
       blockquote: {
+        fontStyle: "italic",
         margin: 0,
         marginTop: theme.spacing(2),
         marginBottom: theme.spacing(2),
@@ -30,6 +31,9 @@ const useStyles = makeStyles(theme => ({
         borderLeftWidth: 5,
         borderLeftStyle: "solid",
         borderLeftColor: theme.palette.action.selected,
+        "& > :last-child": {
+          marginBottom: 0,
+        },
       },
       code: {
         fontFamily: monotypeFontStack,

@@ -95,16 +95,20 @@ results in:
 ### Blockquote with nested elements
 
 ```md
-> ### Blockquote with other elements:
-> - **bold**
-> - _italic_
+> #### Blockquote with other elements:
+> - Formatted **text**
+>   ```
+>   code
+>   ```
 ```
 
 results in:
 
 > #### Blockquote with other elements:
-> - **bold**
-> - _italic_
+> - Formatted **text**
+>   ```
+>   code
+>   ```
 
 ## Lists
 
@@ -302,10 +306,10 @@ My favorite search engine is [Duck Duck Go](https://duckduckgo.com "The best sea
 
 ## Maths
 
-You can write maths in your Markdown [using LaTeX mathematical expressions.](https://www.overleaf.com/learn/latex/mathematical_expressions) 
+You can write maths in your Markdown [using LaTeX mathematical expressions.](https://www.overleaf.com/learn/latex/mathematical_expressions)
 
 ### Inline
-Write an inline expression by wrapping it in `$`.  
+Write an inline expression by wrapping it in `$`.
 ```md
 Lift($L$) can be determined by Lift Coefficient ($C_L$) like the following equation.
 
