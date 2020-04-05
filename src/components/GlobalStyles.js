@@ -7,6 +7,7 @@ const monotypeFontStack = [
   "Consolas",
   "Liberation Mono",
   "Menlo",
+  "Roboto Mono",
   "Courier",
   "monospace",
 ]
