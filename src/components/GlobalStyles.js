@@ -33,11 +33,14 @@ const useStyles = makeStyles(theme => ({
       code: {
         fontFamily: monotypeFontStack,
         borderRadius: "inherit",
+        overflow: "auto",
+        padding: 20,
       },
       pre: {
         fontFamily: monotypeFontStack,
         borderRadius: "inherit",
         margin: 0,
+        padding: 0,
       },
       ".gatsby-highlight": {
         borderRadius: theme.shape.borderRadius,

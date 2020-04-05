@@ -11,7 +11,7 @@ const useStyles = makeStyles(theme => ({
   button: {
     position: "absolute",
     top: 4,
-    right: 4,
+    right: 1,
     "&:hover": {
       backgroundColor: "transparent",
     },
@@ -40,6 +40,7 @@ export default ({ children, ...others }) => {
   return (
     <pre {...others} ref={preRef}>
       <Button
+        size="small"
         onClick={copyToClipboard}
         className={classes.button}
         disabled={copied}
