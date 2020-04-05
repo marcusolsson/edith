@@ -10,8 +10,8 @@ const copy = require("clipboard-copy")
 const useStyles = makeStyles(theme => ({
   button: {
     position: "absolute",
-    top: 4,
-    right: 1,
+    top: 0,
+    right: 0,
     "&:hover": {
       backgroundColor: "transparent",
     },
