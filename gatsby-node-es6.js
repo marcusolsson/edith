@@ -73,7 +73,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
     module.units.forEach((unit, index) => {
       createPage({
-        path: "/modules" + node.fields.slug + index,
+        path: "/modules" + node.fields.slug + (index + 1),
         component: path.resolve(`./src/templates/module.js`),
         context: {
           slug: node.fields.slug,

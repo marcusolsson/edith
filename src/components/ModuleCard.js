@@ -72,7 +72,7 @@ export default props => {
               button
               key={index}
               component={Link}
-              to={"/modules" + props.module.fields.slug + index}
+              to={"/modules" + props.module.fields.slug + (index + 1)}
             >
               <ListItemText primary={index + 1 + ". " + unit.title} />
             </ListItem>

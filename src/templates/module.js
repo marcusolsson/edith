@@ -76,7 +76,7 @@ export default props => {
             <Step key={index}>
               <StepButton
                 component={Link}
-                to={`/modules${module.fields.slug}${index}`}
+                to={`/modules${module.fields.slug}${index + 1}`}
                 completed={index < unitIndex}
                 style={{
                   marginBottom: "1em",
@@ -89,7 +89,7 @@ export default props => {
         </Stepper>
       }
     >
-      <Paper className={classes.paper}>
+      <Paper className={classes.paper} key={unit.id}>
         <Typography variant="h1">{unit.title}</Typography>
         {unit.components}
       </Paper>
@@ -99,7 +99,7 @@ export default props => {
           <Button
             variant="contained"
             component={Link}
-            to={"/modules" + module.fields.slug + (unitIndex - 1)}
+            to={`/modules${module.fields.slug}${unitIndex}`}
           >
             {intl.formatMessage({ id: "unit.back" })}
           </Button>
@@ -110,7 +110,7 @@ export default props => {
             variant="contained"
             color="primary"
             component={Link}
-            to={"/modules" + module.fields.slug + (unitIndex + 1)}
+            to={`/modules${module.fields.slug}${unitIndex + 2}`}
           >
             {intl.formatMessage({ id: "unit.next" })}
           </Button>
