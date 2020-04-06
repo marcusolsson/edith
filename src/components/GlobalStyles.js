@@ -67,6 +67,10 @@ const useStyles = makeStyles(theme => ({
         },
         borderBottom: `1px solid ${theme.palette.divider}`,
       },
+      // TODO: Is there a better way to remove margin on the paragraphs in list item?
+      "li > p": {
+        margin: 0,
+      },
     },
   },
 }))

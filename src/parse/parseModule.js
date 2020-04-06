@@ -100,6 +100,15 @@ export default ast => {
                 component: "th",
               },
             })
+          } else if (n.tagName === "li") {
+            return Object.assign({}, n, {
+              properties: {
+                ...n.properties,
+                // TODO: This depends on the Typography css being included.
+                // This is generally true, but not guaranteed.
+                class: "MuiTypography-root MuiTypography-body1",
+              },
+            })
           }
           return n
         })
