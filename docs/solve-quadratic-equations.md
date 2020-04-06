@@ -11,7 +11,7 @@ topics: ["Math", "Sample"]
 
 > **This sample module was contributed by [tskarhed](https://github.com/tskarhed).**
 >
-> Sample modules demonstrate how different types of content looks like in Edith. Learn more about [writing sample modules](https://github.com/marcusolsson/edith#documentation).
+> Sample modules demonstrate how different types of content look like in Edith. Learn more about [writing sample modules](https://github.com/marcusolsson/edith#documentation).
 
 The following is a graph of $y=\frac{1}{2}x^2+x-\frac{3}{2}$.
 
