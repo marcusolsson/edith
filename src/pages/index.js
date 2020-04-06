@@ -155,8 +155,8 @@ export default ({ data }) => {
   return (
     <DefaultLayout>
       <Hero
-        title={data.site.siteMetadata.hero.title}
-        description={data.site.siteMetadata.hero.description}
+        title={intl.formatMessage({ id: `browse.hero.title` })}
+        description={intl.formatMessage({ id: `browse.hero.description` })}
       />
 
       {/* Filter boxes */}
@@ -255,10 +255,6 @@ export const query = graphql`
     site {
       siteMetadata {
         title
-        hero {
-          title
-          description
-        }
       }
     }
     allMarkdownRemark {

@@ -24,7 +24,11 @@
     "anyTopic": "Alla ämnen",
     "anyAudience": "Alla målgrupper",
     "anyDifficulty": "Alla nivåer",
-    "noResults": "Inga resultat"
+    "noResults": "Inga resultat",
+    "hero": {
+      "title": "Den öppna läroplattformen",
+      "description": "Edith är en öppen läroplattform baserad på Gatsby som hjälper utbildare att fokusera på innehåll."
+    }
   },
   "course": {
     "curriculum": "Kursöversikt"

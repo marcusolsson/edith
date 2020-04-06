@@ -7,11 +7,6 @@
 module.exports = {
   siteMetadata: {
     title: "Edith.",
-    hero: {
-      title: "The open learning platform",
-      description:
-        "Edith is a free and open-source learning platform based on Gatsby that helps educators focus on content.",
-    },
   },
   plugins: [
     "gatsby-plugin-react-helmet",
@@ -58,7 +53,7 @@ module.exports = {
           },
           {
             resolve: `gatsby-remark-katex`,
-          }
+          },
         ],
       },
     },
