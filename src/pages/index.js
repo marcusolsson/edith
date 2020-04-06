@@ -133,15 +133,24 @@ export default ({ data }) => {
       )
     })
 
-  const markdownModules = filteredNodes.map(node => {
-    const module = parseModule(node.htmlAst)
-    module.audience = node.frontmatter.audience
-    module.difficulty = node.frontmatter.difficulty
-    module.topics = node.frontmatter.topics
-    module.type = node.frontmatter.type
-    module.fields = { slug: node.fields.slug }
-    return module
-  })
+  const markdownModules = filteredNodes
+    .map(node => {
+      const module = parseModule(node.htmlAst)
+      module.audience = node.frontmatter.audience
+      module.difficulty = node.frontmatter.difficulty
+      module.topics = node.frontmatter.topics
+      module.type = node.frontmatter.type
+      module.fields = { slug: node.fields.slug }
+      return module
+    })
+    .sort((a, b) => {
+      if (a.title < b.title) {
+        return -1
+      } else if (a.title > b.title) {
+        return 1
+      }
+      return 0
+    })
 
   return (
     <DefaultLayout>
