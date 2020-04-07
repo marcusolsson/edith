@@ -12,38 +12,26 @@ Edith is a free and open source learning platform based on [Gatsby](https://www.
 
 ## Start using Edith
 
-Unfortunately, Edith is only a [Gatsby starter](https://www.gatsbyjs.org/docs/starters/), which means you won't be able to update your site with the latest features in Edith. From the [Gatsby docs](https://www.gatsbyjs.org/docs/themes/converting-a-starter/):
+1. **Get the code**.
 
-> A starter is a boilerplate Gatsby site that users can copy and customize. Once modified, a starter maintains no connection to its source.
-
-To address this, I'm planning to convert Edith into a [Gatsby theme](https://www.gatsbyjs.org/docs/themes/what-are-gatsby-themes/). For updates on this, check out [the issue](https://github.com/marcusolsson/edith/issues/15).
-
-For now though, here's how you create a new site using Edith as a starter:
-
-1. **Create an Edith site**
-   
-   Use the Gatsby CLI to create a new site, based on Edith:
-   
    ```
-   gatsby new my-edith-starter https://github.com/marcusolsson/edith
+   git clone https://github.com/marcusolsson/edith.git
    ```
 
-1. **Start developing**
-   
-   Navigate to your new site's directory and start the site:
-   
+1. **Start the site in develop mode**.
+
    ```
-   cd my-edith-starter/
-   gatsby develop
+   cd edith
+   yarn workspace www develop
    ```
-   
-1. **Navigate to http://localhost:8000**
+
+1. **Navigate to http://localhost:8000**.
 
 ## Contribute
 
 Edith welcomes contributions! This section lists some examples of how you can help. If you want to help in other ways than the ones listed below, [let me know](https://github.com/marcusolsson/edith/issues/new)!
 
-- **Bugs**: Nobody likes bugs. If you find one, please [report it](https://github.com/marcusolsson/edith/issues/new). Tell me what happened, and what you expected to happen. Try to be as specific as you can. 
+- **Bugs**: Nobody likes bugs. If you find one, please [report it](https://github.com/marcusolsson/edith/issues/new). Tell me what happened, and what you expected to happen. Try to be as specific as you can.
 - **Feature requests**: If you think something's missing, submit a [feature request](https://github.com/marcusolsson/edith/issues/new) and tell me what you'd like to see.
 
 ### User experience (UX)
@@ -58,32 +46,15 @@ However, Edith needs sample content for demo purposes, to help people understand
 
 ### Code
 
-If you know your way around code, I'd love your help working on feature and bug fixes. 
+If you know your way around code, I'd love your help working on feature and bug fixes.
 
-Edith is based on [Gatsby](https://gatsbyjs.org), [React](https://reactjs.org/), and [Material UI](https://material-ui.com/). 
+Edith is based on [Gatsby](https://gatsbyjs.org), [React](https://reactjs.org/), and [Material UI](https://material-ui.com/).
 
 Don't have experience in those technologies? Neither did I when I started this project. **We'll learn together**. If you have experience in Javascript, that's helpful.
 
-To get started writing code:
-
-1. **Get the code**.
-
-   ```
-   git clone https://github.com/marcusolsson/edith.git
-   ```
-
-1. **Start the site in develop mode**.
-
-   ```
-   cd edith
-   yarn develop
-   ```
-   
-1. **Navigate to http://localhost:8000**.
-
 ## Mentorship
 
-If you're excited about the idea of a open learning platform, but you don't yet feel you have the skills to contribute, I'd like to help you get there. 
+If you're excited about the idea of a open learning platform, but you don't yet feel you have the skills to contribute, I'd like to help you get there.
 
 If you have any questions, either [submit a GitHub issue](https://github.com/marcusolsson/edith/issues/new), or reach out to me through the channels listed on the bottom of [my web site](https://marcus.se.net).
 

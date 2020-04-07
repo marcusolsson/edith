@@ -22,7 +22,7 @@ export default props => {
   return (
     <div className={classes.root}>
       {props.labels?.map((label, index) => (
-        <Chip key={index} size="small" label={label} />
+        <Chip key={index} label={label} />
       ))}
     </div>
   )

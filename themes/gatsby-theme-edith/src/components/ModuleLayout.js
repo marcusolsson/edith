@@ -36,7 +36,6 @@ const useStyles = makeStyles(theme => ({
       flexShrink: 0,
     },
   },
-  appBar: {},
   menuButton: {
     marginRight: theme.spacing(2),
     [theme.breakpoints.up("sm")]: {

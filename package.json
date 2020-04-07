@@ -1,71 +1,8 @@
 {
-  "name": "edith",
   "private": true,
-  "description": "An open learning platform",
-  "version": "0.1.0",
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "jest",
-    "build-prefix": "gatsby build --prefix-paths"
-  },
-  "dependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.0",
-    "@babel/preset-react": "^7.9.4",
-    "@babel/register": "^7.9.0",
-    "@material-ui/core": "^4.9.3",
-    "@material-ui/icons": "^4.9.1",
-    "@material-ui/lab": "^4.0.0-alpha.46",
-    "@material-ui/styles": "^4.9.6",
-    "babel-jest": "^25.2.3",
-    "babel-preset-gatsby": "^0.3.1",
-    "clipboard-copy": "^3.1.0",
-    "gatsby": "^2.20.0",
-    "gatsby-image": "^2.3.1",
-    "gatsby-plugin-intl": "^0.3.3",
-    "gatsby-plugin-material-ui": "^2.1.6",
-    "gatsby-plugin-meta-redirect": "^1.1.1",
-    "gatsby-plugin-react-helmet": "^3.2.1",
-    "gatsby-plugin-sharp": "^2.5.3",
-    "gatsby-remark-code-titles": "^1.1.0",
-    "gatsby-remark-images": "^3.2.1",
-    "gatsby-remark-katex": "^3.2.1",
-    "gatsby-remark-prismjs": "^3.4.1",
-    "gatsby-source-filesystem": "^2.1.48",
-    "gatsby-transformer-remark": "^2.7.1",
-    "gatsby-transformer-sharp": "^2.4.3",
-    "gatsby-transformer-yaml-full": "^0.2.0",
-    "gatsby-yaml-full-markdown": "^0.2.1",
-    "gh-pages": "^2.2.0",
-    "identity-obj-proxy": "^3.0.0",
-    "jest": "^25.2.3",
-    "katex": "^0.11.1",
-    "prism-themes": "^1.3.0",
-    "prismjs": "^1.19.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1",
-    "react-i18next": "^11.3.4",
-    "react-test-renderer": "^16.13.1",
-    "rehype-react": "^5.0.0",
-    "unist-builder": "^2.0.3",
-    "unist-util-map": "^2.0.1",
-    "unist-util-visit": "^2.0.2"
-  },
-  "devDependencies": {
-    "prettier": "^1.19.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/marcusolsson/edith"
-  },
-  "bugs": {
-    "url": "https://github.com/marcusolsson/edith/issues"
-  }
+  "workspaces": [
+    "examples/*",
+    "themes/*",
+    "www"
+  ]
 }
