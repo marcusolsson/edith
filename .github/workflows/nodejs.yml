@@ -22,11 +22,11 @@ jobs:
         with:
           node-version: 12.x
       - name: Install dependencies
-        run: yarn install
+        run: yarn workspace www install
       - name: Build
-        run: yarn build-prefix
+        run: yarn workspace www build-prefix
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./public
+          publish_dir: ./www/public
