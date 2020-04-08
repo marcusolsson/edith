@@ -7,8 +7,12 @@ const drawerWidth = 250
 
 const useStyles = makeStyles(theme => ({
   root: {
-    backgroundColor: theme.palette.background.default,
-    color: theme.palette.text.primary,
+    backgroundColor: theme.appBar?.transparent
+      ? theme.palette.background.default
+      : theme.palette.primary.main,
+    color: theme.appBar?.transparent
+      ? theme.palette.text.primary
+      : theme.palette.primary.contrastText,
     [theme.breakpoints.up("sm")]: {
       width: props => (props.drawer ? `calc(100% - ${drawerWidth}px)` : null),
       marginLeft: props => (props.drawer === "true" ? drawerWidth : null),

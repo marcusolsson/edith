@@ -8,9 +8,10 @@ import Link from "./Link"
 
 const useStyles = makeStyles(theme => ({
   root: {
-    color: theme.palette.text.primary,
     "& a": {
-      color: theme.palette.text.primary,
+      color: theme.appBar?.transparent
+        ? theme.palette.text.primary
+        : theme.palette.primary.contrastText,
       textDecoration: "none",
     },
     fontSize: 24,

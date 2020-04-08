@@ -9,6 +9,7 @@ import Button from "@material-ui/core/Button"
 import Stepper from "@material-ui/core/Stepper"
 import Step from "@material-ui/core/Step"
 import StepButton from "@material-ui/core/StepButton"
+import StepLabel from "@material-ui/core/StepLabel"
 
 import ModuleLayout from "../components/ModuleLayout"
 import Link from "../components/Link"

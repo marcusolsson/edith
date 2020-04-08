@@ -1,34 +1,19 @@
 import React from "react"
-import { Helmet } from "react-helmet"
-
-import { useStaticQuery, graphql } from "gatsby"
-
-import CssBaseline from "@material-ui/core/CssBaseline"
-import GlobalStyles from "./GlobalStyles"
-
+import { createMuiTheme } from "@material-ui/core/styles"
 import useMediaQuery from "@material-ui/core/useMediaQuery"
-import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles"
 
 import blue from "@material-ui/core/colors/blue"
+import green from "@material-ui/core/colors/green"
 
-export default ({ children }) => {
-  const data = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `
-  )
-
+export default () => {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)")
 
-  const theme = React.useMemo(
+  return React.useMemo(
     () =>
       createMuiTheme({
+        appBar: {
+          transparent: true,
+        },
         overrides: {
           MuiTable: {
             root: {
@@ -59,6 +44,7 @@ export default ({ children }) => {
           h2: {
             fontSize: 28,
             fontWeight: 700,
+            marginTop: 24,
             marginBottom: 24,
           },
           h3: {
@@ -98,18 +84,9 @@ export default ({ children }) => {
         palette: {
           type: prefersDarkMode ? "dark" : "light",
           primary: blue,
+          appBar: green,
         },
       }),
     [prefersDarkMode]
-  )
-
-  return (
-    <ThemeProvider theme={theme}>
-      <Helmet title={data.site.siteMetadata.title} />
-      <React.Fragment>
-        <CssBaseline />
-        <GlobalStyles>{children}</GlobalStyles>
-      </React.Fragment>
-    </ThemeProvider>
   )
 }

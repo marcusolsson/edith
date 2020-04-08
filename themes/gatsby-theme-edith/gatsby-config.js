@@ -4,11 +4,19 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
+const path = require("path")
+
 module.exports = {
   siteMetadata: {
     title: "Edith.",
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-page-creator`,
+      options: {
+        path: path.join(__dirname, `src`, `pages`),
+      },
+    },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-material-ui",
     {
@@ -24,13 +32,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `content`,
-        path: `${__dirname}/docs/`,
-      },
-    },
-    {
-      resolve: `gatsby-transformer-yaml-full`,
-      options: {
-        plugins: [`gatsby-yaml-full-markdown`],
+        path: path.resolve("./content/"),
       },
     },
     `gatsby-plugin-sharp`,
