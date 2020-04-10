@@ -15,13 +15,13 @@ Edith is a free and open source learning platform based on [Gatsby](https://www.
 1. **Get the code**.
 
    ```
-   git clone https://github.com/marcusolsson/edith.git
+   gatsby new my-site https://github.com/marcusolsson/edith.git
    ```
 
 1. **Start the site in develop mode**.
 
    ```
-   cd edith
+   cd my-site
    yarn workspace www develop
    ```
 
