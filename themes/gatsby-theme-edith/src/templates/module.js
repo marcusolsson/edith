@@ -1,4 +1,5 @@
 import React from "react"
+import { useState, useEffect } from "react"
 import parseModule from "../parse/parseModule"
 
 import { graphql } from "gatsby"
@@ -9,10 +10,9 @@ import Button from "@material-ui/core/Button"
 import Stepper from "@material-ui/core/Stepper"
 import Step from "@material-ui/core/Step"
 import StepButton from "@material-ui/core/StepButton"
-import StepLabel from "@material-ui/core/StepLabel"
 
 import ModuleLayout from "../components/ModuleLayout"
-import Link from "../components/Link"
+import { Link, navigate } from "../components/Link"
 import Paper from "@material-ui/core/Paper"
 import Typography from "@material-ui/core/Typography"
 
@@ -61,6 +61,27 @@ export default props => {
   const unitIndex = props.pageContext.index
   const unit = module.units[unitIndex]
 
+  const prevUnit = () => {
+    if (unitIndex > 0) {
+      navigate(`/modules${module.fields.slug}${unitIndex}`)
+    }
+  }
+  const nextUnit = () => {
+    if (unitIndex < module.units.length - 1) {
+      navigate(`/modules${module.fields.slug}${unitIndex + 2}`)
+    }
+  }
+
+  // Navigate using arrow keys
+  const arrowLeft = useKeyPress("ArrowLeft")
+  const arrowRight = useKeyPress("ArrowRight")
+
+  if (arrowLeft) {
+    prevUnit()
+  } else if (arrowRight) {
+    nextUnit()
+  }
+
   return (
     <ModuleLayout
       title={module.title}
@@ -97,22 +118,13 @@ export default props => {
 
       <div className={classes.buttons}>
         {unitIndex > 0 ? (
-          <Button
-            variant="contained"
-            component={Link}
-            to={`/modules${module.fields.slug}${unitIndex}`}
-          >
+          <Button variant="contained" onClick={prevUnit}>
             {intl.formatMessage({ id: "unit.back" })}
           </Button>
         ) : null}
         <div />
         {unitIndex < module.units.length - 1 ? (
-          <Button
-            variant="contained"
-            color="primary"
-            component={Link}
-            to={`/modules${module.fields.slug}${unitIndex + 2}`}
-          >
+          <Button variant="contained" color="primary" onClick={nextUnit}>
             {intl.formatMessage({ id: "unit.next" })}
           </Button>
         ) : (
@@ -128,6 +140,46 @@ export default props => {
       </div>
     </ModuleLayout>
   )
+}
+
+function useKeyPress(targetKey) {
+  // State for keeping track of whether key is pressed
+
+  const [keyPressed, setKeyPressed] = useState(false)
+
+  // If pressed key is our target key then set to true
+
+  function downHandler({ key }) {
+    if (key === targetKey) {
+      setKeyPressed(true)
+    }
+  }
+
+  // If released key is our target key then set to false
+
+  const upHandler = ({ key }) => {
+    if (key === targetKey) {
+      setKeyPressed(false)
+    }
+  }
+
+  // Add event listeners
+
+  useEffect(() => {
+    window.addEventListener("keydown", downHandler)
+
+    window.addEventListener("keyup", upHandler)
+
+    // Remove event listeners on cleanup
+
+    return () => {
+      window.removeEventListener("keydown", downHandler)
+
+      window.removeEventListener("keyup", upHandler)
+    }
+  }, []) // Empty array ensures that effect is only run on mount and unmount
+
+  return keyPressed
 }
 
 export const query = graphql`
