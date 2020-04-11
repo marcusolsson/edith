@@ -5,6 +5,7 @@ import rehypeReact from "rehype-react"
 
 import Link from "../components/MarkdownLink"
 import CodeBlock from "../components/CodeBlock"
+import Quiz from "../components/Quiz"
 
 import Typography from "@material-ui/core/Typography"
 import Table from "@material-ui/core/Table"
@@ -33,6 +34,7 @@ const renderAst = new rehypeReact({
     th: TableCell,
     hr: Divider,
     pre: CodeBlock,
+    quiz: Quiz,
   },
 }).Compiler
 
