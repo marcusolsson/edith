@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-theme-edith",
+  "name": "@marcusolsson/edith",
   "private": true,
   "description": "An open learning platform",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",

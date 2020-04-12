@@ -1,5 +1,10 @@
 {
+  "name": "edith",
+  "version": "0.1.0-pre.0",
   "private": true,
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  },
   "workspaces": [
     "examples/*",
     "packages/*",
