@@ -60,4 +60,4 @@ If you have any questions, either [submit a GitHub issue](https://github.com/mar
 
 ## License
 
-Edith is licensed under the [MIT License](LICENSE)
+Edith is licensed under the [MIT License](LICENSE).
