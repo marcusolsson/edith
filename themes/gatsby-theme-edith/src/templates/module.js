@@ -111,7 +111,7 @@ export default props => {
         </Stepper>
       }
     >
-      <Paper className={classes.paper} key={unit.id}>
+      <Paper className={classes.paper}>
         <Typography variant="h1">{unit.title}</Typography>
         {unit.components}
       </Paper>
