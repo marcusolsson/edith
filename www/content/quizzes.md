@@ -5,7 +5,7 @@ audience: ["Educator"]
 topics: ["Content"]
 ---
 
-# Quizzes
+# Adding quizzes
 
 ## Introduction
 

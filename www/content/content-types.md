@@ -5,7 +5,7 @@ audience: ["Educator"]
 topics: ["Content"]
 ---
 
-# Content types
+# Understanding content types
 
 ## Introduction
 
