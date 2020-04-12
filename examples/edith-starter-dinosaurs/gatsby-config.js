@@ -5,5 +5,5 @@
  */
 
 module.exports = {
-  plugins: ["@marcusolsson/edith"]
+  plugins: ["gatsby-theme-edith"]
 };
