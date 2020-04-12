@@ -41,7 +41,7 @@ To override the default theme:
        ...theme,
        palette: {
          primary: {
-         main: "#ff0000",
+           main: "#ff0000",
        },
      },
    })
