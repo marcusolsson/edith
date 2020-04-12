@@ -1,7 +1,7 @@
 {
   "name": "@marcusolsson/edith",
   "description": "An open learning platform",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -72,5 +72,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "50dbbdc16b5c8d96b874f1ceb7ce03518081feec"
 }
