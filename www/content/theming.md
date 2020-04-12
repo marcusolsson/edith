@@ -1,7 +1,7 @@
 ---
 type: module
-difficulty: Intermediate
-audience: ["Educator"]
+difficulty: Advanced
+audience: ["Administrator"]
 topics: ["Configuration"]
 ---
 
