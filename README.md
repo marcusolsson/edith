@@ -27,7 +27,7 @@ Edith is a [Gatsby theme](https://www.gatsbyjs.org/docs/themes/) and can be used
    gatsby develop
    ```
 
-1. **Navigate to [localhost:8000](http://localhost:8000).
+1. **Navigate to [localhost:8000](http://localhost:8000)**.
 
 Here are the available starters:
 
@@ -49,9 +49,7 @@ Here are the available starters:
    yarn workspace www develop
    ```
 
-1. **Navigate to http://localhost:8000**.
-
-
+1. **Navigate to [localhost:8000](http://localhost:8000)**.
 
 ## Contribute
 
