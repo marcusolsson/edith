@@ -2,7 +2,7 @@
   "private": true,
   "workspaces": [
     "examples/*",
-    "themes/*",
+    "packages/*",
     "www"
   ]
 }
