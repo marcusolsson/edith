@@ -12,10 +12,34 @@ Edith is a free and open source learning platform based on [Gatsby](https://www.
 
 ## Start using Edith
 
+Edith is a [Gatsby theme](https://www.gatsbyjs.org/docs/themes/) and can be used like any other Gatsby plugin.
+
+1. **Create a new site with the default starter**:
+
+   ```
+   gatsby new my-site https://github.com/marcusolsson/gatsby-starter-edith-default
+   ```
+
+1. **Start developing**.
+
+   ```
+   cd my-site
+   gatsby develop
+   ```
+
+1. **Navigate to [localhost:8000](http://localhost:8000).
+
+Here are the available starters:
+
+- [gatsby-starter-edith-default](https://github.com/marcusolsson/gatsby-starter-edith-default)
+- [gatsby-starter-edith-dinosaurs](https://github.com/marcusolsson/gatsby-starter-edith-dinosaurs)
+
+## Start developing
+
 1. **Get the code**.
 
    ```
-   gatsby new my-site https://github.com/marcusolsson/edith.git
+   git clone https://github.com/marcusolsson/edith.git
    ```
 
 1. **Start the site in develop mode**.
@@ -26,6 +50,8 @@ Edith is a free and open source learning platform based on [Gatsby](https://www.
    ```
 
 1. **Navigate to http://localhost:8000**.
+
+
 
 ## Contribute
 
