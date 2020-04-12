@@ -1,6 +1,5 @@
 {
   "name": "@marcusolsson/edith",
-  "private": true,
   "description": "An open learning platform",
   "version": "0.0.0",
   "license": "MIT",
