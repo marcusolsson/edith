@@ -143,6 +143,7 @@ export default ({ data }) => {
       module.fields = { slug: node.fields.slug }
       return module
     })
+
     .sort((a, b) => {
       if (a.title < b.title) {
         return -1
@@ -158,7 +159,6 @@ export default ({ data }) => {
         title={intl.formatMessage({ id: `browse.hero.title` })}
         description={intl.formatMessage({ id: `browse.hero.description` })}
       />
-
       {/* Filter boxes */}
       <Grid container spacing={1} className={classes.filterGroup}>
         <Grid item xs={12} sm={3}>
@@ -228,7 +228,6 @@ export default ({ data }) => {
           </FormControl>
         </Grid>
       </Grid>
-
       {/* Content cards */}
       <Grid container spacing={2}>
         {markdownModules.length > 0 ? (
@@ -257,7 +256,7 @@ export const query = graphql`
         title
       }
     }
-    allMarkdownRemark {
+    allMarkdownRemark(filter: OR: [{ frontmatter: { type: "module" } }, { frontmatter: { type: "course" } }]) {
       edges {
         node {
           frontmatter {
