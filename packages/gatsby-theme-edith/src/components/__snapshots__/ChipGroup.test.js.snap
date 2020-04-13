@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChipGroup renders correctly with multiple labels 1`] = `
+<div
+  className="makeStyles-root-1"
+>
+  <div
+    className="MuiChip-root"
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+  >
+    <span
+      className="MuiChip-label"
+    >
+      Foo
+    </span>
+  </div>
+  <div
+    className="MuiChip-root"
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+  >
+    <span
+      className="MuiChip-label"
+    >
+      Bar
+    </span>
+  </div>
+  <div
+    className="MuiChip-root"
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+  >
+    <span
+      className="MuiChip-label"
+    >
+      Baz
+    </span>
+  </div>
+</div>
+`;
+
+exports[`ChipGroup renders correctly with no labels 1`] = `
+<div
+  className="makeStyles-root-1"
+/>
+`;
+
+exports[`ChipGroup renders correctly with one label 1`] = `
+<div
+  className="makeStyles-root-1"
+>
+  <div
+    className="MuiChip-root"
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+  >
+    <span
+      className="MuiChip-label"
+    >
+      Foo
+    </span>
+  </div>
+</div>
+`;

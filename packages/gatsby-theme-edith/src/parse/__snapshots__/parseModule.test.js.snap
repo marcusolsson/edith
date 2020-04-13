@@ -29,13 +29,19 @@ Object {
     Object {
       "components": Array [
         <ul>
-          <li />
+          <li
+            className="MuiTypography-root MuiTypography-body1"
+          />
           
 
-          <li />
+          <li
+            className="MuiTypography-root MuiTypography-body1"
+          />
           
 
-          <li />
+          <li
+            className="MuiTypography-root MuiTypography-body1"
+          />
         </ul>,
       ],
       "title": "Do that",

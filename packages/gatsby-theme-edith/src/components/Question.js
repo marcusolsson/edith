@@ -52,9 +52,9 @@ export default props => {
           marginBottom: 14,
         }}
       >
-        {props.question.answers.map(answer => {
+        {props.question.answers.map((answer, index) => {
           return (
-            <Grid item xs={12} md={6}>
+            <Grid key={index} item xs={12} md={6}>
               <Answer
                 onClick={handleRadioChange(answer.answer)}
                 color={

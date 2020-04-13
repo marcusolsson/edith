@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Question renders correctly 1`] = `
+<div
+  style={
+    Object {
+      "marginBottom": 28,
+      "marginTop": 28,
+    }
+  }
+>
+  <p
+    className="MuiTypography-root makeStyles-label-2 MuiTypography-body1 MuiTypography-paragraph"
+  >
+    Foo?
+  </p>
+  <div
+    className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2"
+    style={
+      Object {
+        "marginBottom": 14,
+      }
+    }
+  >
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6"
+    >
+      <div
+        className="MuiPaper-root MuiCard-root makeStyles-root-137 MuiPaper-elevation1 MuiPaper-rounded"
+      >
+        <button
+          className="MuiButtonBase-root MuiCardActionArea-root"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <div
+            className="MuiCardContent-root"
+          >
+            <p
+              className="MuiTypography-root MuiTypography-body1"
+            >
+              Bar!
+            </p>
+          </div>
+          <span
+            className="MuiCardActionArea-focusHighlight"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6"
+    >
+      <div
+        className="MuiPaper-root MuiCard-root makeStyles-root-137 MuiPaper-elevation1 MuiPaper-rounded"
+      >
+        <button
+          className="MuiButtonBase-root MuiCardActionArea-root"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <div
+            className="MuiCardContent-root"
+          >
+            <p
+              className="MuiTypography-root MuiTypography-body1"
+            >
+              Baz!
+            </p>
+          </div>
+          <span
+            className="MuiCardActionArea-focusHighlight"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
