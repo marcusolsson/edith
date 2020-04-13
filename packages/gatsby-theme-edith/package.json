@@ -53,6 +53,8 @@
     "unist-util-visit": "^2.0.2"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.5.0",
+    "@testing-library/react": "^10.0.2",
     "gatsby": "^2.20.0",
     "prettier": "^1.19.1",
     "react": "^16.12.0",

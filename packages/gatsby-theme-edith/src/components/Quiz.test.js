@@ -1,5 +1,5 @@
 import React from "react"
-import renderer from "react-test-renderer"
+import { render } from "@testing-library/react"
 
 import Quiz from "./Quiz"
 
@@ -39,7 +39,7 @@ describe("Quiz", () => {
         ]
     }
     `
-    const tree = renderer.create(<Quiz>{json}</Quiz>).toJSON()
-    expect(tree).toMatchSnapshot()
+    const { asFragment } = render(<Quiz>{json}</Quiz>)
+    expect(asFragment()).toMatchSnapshot()
   })
 })

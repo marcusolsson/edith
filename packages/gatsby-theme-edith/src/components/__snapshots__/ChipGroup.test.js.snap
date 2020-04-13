@@ -1,65 +1,63 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ChipGroup renders correctly with multiple labels 1`] = `
-<div
-  className="makeStyles-root-1"
->
+<DocumentFragment>
   <div
-    className="MuiChip-root"
-    onKeyDown={[Function]}
-    onKeyUp={[Function]}
+    class="makeStyles-root-33"
   >
-    <span
-      className="MuiChip-label"
+    <div
+      class="MuiChip-root"
     >
-      Foo
-    </span>
-  </div>
-  <div
-    className="MuiChip-root"
-    onKeyDown={[Function]}
-    onKeyUp={[Function]}
-  >
-    <span
-      className="MuiChip-label"
+      <span
+        class="MuiChip-label"
+      >
+        Foo
+      </span>
+    </div>
+    <div
+      class="MuiChip-root"
     >
-      Bar
-    </span>
-  </div>
-  <div
-    className="MuiChip-root"
-    onKeyDown={[Function]}
-    onKeyUp={[Function]}
-  >
-    <span
-      className="MuiChip-label"
+      <span
+        class="MuiChip-label"
+      >
+        Bar
+      </span>
+    </div>
+    <div
+      class="MuiChip-root"
     >
-      Baz
-    </span>
+      <span
+        class="MuiChip-label"
+      >
+        Baz
+      </span>
+    </div>
   </div>
-</div>
+</DocumentFragment>
 `;
 
 exports[`ChipGroup renders correctly with no labels 1`] = `
-<div
-  className="makeStyles-root-1"
-/>
+<DocumentFragment>
+  <div
+    class="makeStyles-root-1"
+  />
+</DocumentFragment>
 `;
 
 exports[`ChipGroup renders correctly with one label 1`] = `
-<div
-  className="makeStyles-root-1"
->
+<DocumentFragment>
   <div
-    className="MuiChip-root"
-    onKeyDown={[Function]}
-    onKeyUp={[Function]}
+    class="makeStyles-root-2"
   >
-    <span
-      className="MuiChip-label"
+    <div
+      class="MuiChip-root"
     >
-      Foo
-    </span>
+      <span
+        class="MuiChip-label"
+      >
+        Foo
+      </span>
+    </div>
   </div>
-</div>
+</DocumentFragment>
 `;

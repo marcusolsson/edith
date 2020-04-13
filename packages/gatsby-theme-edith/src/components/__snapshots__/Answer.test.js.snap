@@ -1,226 +1,175 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Answer renders correctly by default 1`] = `
-<div
-  className="MuiPaper-root MuiCard-root makeStyles-root-1 MuiPaper-elevation1 MuiPaper-rounded"
->
-  <button
-    className="MuiButtonBase-root MuiCardActionArea-root"
-    disabled={false}
-    onBlur={[Function]}
-    onDragLeave={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    onKeyUp={[Function]}
-    onMouseDown={[Function]}
-    onMouseLeave={[Function]}
-    onMouseUp={[Function]}
-    onTouchEnd={[Function]}
-    onTouchMove={[Function]}
-    onTouchStart={[Function]}
-    tabIndex={0}
-    type="button"
+<DocumentFragment>
+  <div
+    class="MuiPaper-root MuiCard-root makeStyles-root-1 MuiPaper-elevation1 MuiPaper-rounded"
   >
-    <div
-      className="MuiCardContent-root"
+    <button
+      class="MuiButtonBase-root MuiCardActionArea-root"
+      tabindex="0"
+      type="button"
     >
-      <p
-        className="MuiTypography-root MuiTypography-body1"
+      <div
+        class="MuiCardContent-root"
       >
-        Foo
-      </p>
-    </div>
-    <span
-      className="MuiCardActionArea-focusHighlight"
-    />
-  </button>
-</div>
+        <p
+          class="MuiTypography-root MuiTypography-body1"
+        >
+          Foo
+        </p>
+      </div>
+      <span
+        class="MuiCardActionArea-focusHighlight"
+      />
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</DocumentFragment>
 `;
 
 exports[`Answer renders correctly when answer is correct 1`] = `
-<div
-  className="MuiPaper-root MuiCard-root makeStyles-colorCorrect-2 MuiPaper-elevation1 MuiPaper-rounded"
->
-  <button
-    className="MuiButtonBase-root MuiCardActionArea-root"
-    disabled={false}
-    onBlur={[Function]}
-    onDragLeave={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    onKeyUp={[Function]}
-    onMouseDown={[Function]}
-    onMouseLeave={[Function]}
-    onMouseUp={[Function]}
-    onTouchEnd={[Function]}
-    onTouchMove={[Function]}
-    onTouchStart={[Function]}
-    tabIndex={0}
-    type="button"
+<DocumentFragment>
+  <div
+    class="MuiPaper-root MuiCard-root makeStyles-colorCorrect-84 MuiPaper-elevation1 MuiPaper-rounded"
   >
-    <div
-      className="MuiCardContent-root"
+    <button
+      class="MuiButtonBase-root MuiCardActionArea-root"
+      tabindex="0"
+      type="button"
     >
-      <p
-        className="MuiTypography-root MuiTypography-body1"
+      <div
+        class="MuiCardContent-root"
       >
-        Foo
-      </p>
-    </div>
-    <span
-      className="MuiCardActionArea-focusHighlight"
-    />
-    <span
-      className="MuiTouchRipple-root"
-    />
-  </button>
-</div>
+        <p
+          class="MuiTypography-root MuiTypography-body1"
+        >
+          Foo
+        </p>
+      </div>
+      <span
+        class="MuiCardActionArea-focusHighlight"
+      />
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</DocumentFragment>
 `;
 
 exports[`Answer renders correctly when answer is incorrect 1`] = `
-<div
-  className="MuiPaper-root MuiCard-root makeStyles-colorIncorrect-3 MuiPaper-elevation1 MuiPaper-rounded"
->
-  <button
-    className="MuiButtonBase-root MuiCardActionArea-root"
-    disabled={false}
-    onBlur={[Function]}
-    onDragLeave={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    onKeyUp={[Function]}
-    onMouseDown={[Function]}
-    onMouseLeave={[Function]}
-    onMouseUp={[Function]}
-    onTouchEnd={[Function]}
-    onTouchMove={[Function]}
-    onTouchStart={[Function]}
-    tabIndex={0}
-    type="button"
+<DocumentFragment>
+  <div
+    class="MuiPaper-root MuiCard-root makeStyles-colorIncorrect-167 MuiPaper-elevation1 MuiPaper-rounded"
   >
-    <div
-      className="MuiCardContent-root"
+    <button
+      class="MuiButtonBase-root MuiCardActionArea-root"
+      tabindex="0"
+      type="button"
     >
-      <p
-        className="MuiTypography-root MuiTypography-body1"
+      <div
+        class="MuiCardContent-root"
       >
-        Foo
-      </p>
-    </div>
-    <span
-      className="MuiCardActionArea-focusHighlight"
-    />
-  </button>
-</div>
+        <p
+          class="MuiTypography-root MuiTypography-body1"
+        >
+          Foo
+        </p>
+      </div>
+      <span
+        class="MuiCardActionArea-focusHighlight"
+      />
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</DocumentFragment>
 `;
 
 exports[`Answer renders correctly when disabled 1`] = `
-<div
-  className="MuiPaper-root MuiCard-root makeStyles-root-1 MuiPaper-elevation1 MuiPaper-rounded"
->
-  <button
-    className="MuiButtonBase-root MuiCardActionArea-root Mui-disabled"
-    disabled={true}
-    onBlur={[Function]}
-    onDragLeave={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    onKeyUp={[Function]}
-    onMouseDown={[Function]}
-    onMouseLeave={[Function]}
-    onMouseUp={[Function]}
-    onTouchEnd={[Function]}
-    onTouchMove={[Function]}
-    onTouchStart={[Function]}
-    tabIndex={-1}
-    type="button"
+<DocumentFragment>
+  <div
+    class="MuiPaper-root MuiCard-root makeStyles-root-247 MuiPaper-elevation1 MuiPaper-rounded"
   >
-    <div
-      className="MuiCardContent-root"
+    <button
+      class="MuiButtonBase-root MuiCardActionArea-root Mui-disabled"
+      disabled=""
+      tabindex="-1"
+      type="button"
     >
-      <p
-        className="MuiTypography-root makeStyles-disabled-6 MuiTypography-body1"
+      <div
+        class="MuiCardContent-root"
       >
-        Foo
-      </p>
-    </div>
-    <span
-      className="MuiCardActionArea-focusHighlight"
-    />
-  </button>
-</div>
+        <p
+          class="MuiTypography-root makeStyles-disabled-252 MuiTypography-body1"
+        >
+          Foo
+        </p>
+      </div>
+      <span
+        class="MuiCardActionArea-focusHighlight"
+      />
+    </button>
+  </div>
+</DocumentFragment>
 `;
 
 exports[`Answer renders correctly when disabled and answer is correct 1`] = `
-<div
-  className="MuiPaper-root MuiCard-root makeStyles-colorCorrectDisabled-4 MuiPaper-elevation1 MuiPaper-rounded"
->
-  <button
-    className="MuiButtonBase-root MuiCardActionArea-root Mui-disabled"
-    disabled={true}
-    onBlur={[Function]}
-    onDragLeave={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    onKeyUp={[Function]}
-    onMouseDown={[Function]}
-    onMouseLeave={[Function]}
-    onMouseUp={[Function]}
-    onTouchEnd={[Function]}
-    onTouchMove={[Function]}
-    onTouchStart={[Function]}
-    tabIndex={-1}
-    type="button"
+<DocumentFragment>
+  <div
+    class="MuiPaper-root MuiCard-root makeStyles-colorCorrectDisabled-322 MuiPaper-elevation1 MuiPaper-rounded"
   >
-    <div
-      className="MuiCardContent-root"
+    <button
+      class="MuiButtonBase-root MuiCardActionArea-root Mui-disabled"
+      disabled=""
+      tabindex="-1"
+      type="button"
     >
-      <p
-        className="MuiTypography-root makeStyles-disabled-6 MuiTypography-body1"
+      <div
+        class="MuiCardContent-root"
       >
-        Foo
-      </p>
-    </div>
-    <span
-      className="MuiCardActionArea-focusHighlight"
-    />
-  </button>
-</div>
+        <p
+          class="MuiTypography-root makeStyles-disabled-324 MuiTypography-body1"
+        >
+          Foo
+        </p>
+      </div>
+      <span
+        class="MuiCardActionArea-focusHighlight"
+      />
+    </button>
+  </div>
+</DocumentFragment>
 `;
 
 exports[`Answer renders correctly when disabled and answer is incorrect 1`] = `
-<div
-  className="MuiPaper-root MuiCard-root makeStyles-colorIncorrectDisabled-5 MuiPaper-elevation1 MuiPaper-rounded"
->
-  <button
-    className="MuiButtonBase-root MuiCardActionArea-root Mui-disabled"
-    disabled={true}
-    onBlur={[Function]}
-    onDragLeave={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    onKeyUp={[Function]}
-    onMouseDown={[Function]}
-    onMouseLeave={[Function]}
-    onMouseUp={[Function]}
-    onTouchEnd={[Function]}
-    onTouchMove={[Function]}
-    onTouchStart={[Function]}
-    tabIndex={-1}
-    type="button"
+<DocumentFragment>
+  <div
+    class="MuiPaper-root MuiCard-root makeStyles-colorIncorrectDisabled-395 MuiPaper-elevation1 MuiPaper-rounded"
   >
-    <div
-      className="MuiCardContent-root"
+    <button
+      class="MuiButtonBase-root MuiCardActionArea-root Mui-disabled"
+      disabled=""
+      tabindex="-1"
+      type="button"
     >
-      <p
-        className="MuiTypography-root makeStyles-disabled-6 MuiTypography-body1"
+      <div
+        class="MuiCardContent-root"
       >
-        Foo
-      </p>
-    </div>
-    <span
-      className="MuiCardActionArea-focusHighlight"
-    />
-  </button>
-</div>
+        <p
+          class="MuiTypography-root makeStyles-disabled-396 MuiTypography-body1"
+        >
+          Foo
+        </p>
+      </div>
+      <span
+        class="MuiCardActionArea-focusHighlight"
+      />
+    </button>
+  </div>
+</DocumentFragment>
 `;
