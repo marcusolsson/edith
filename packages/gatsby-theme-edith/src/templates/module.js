@@ -111,10 +111,12 @@ export default props => {
         </Stepper>
       }
     >
-      <Paper className={classes.paper}>
-        <Typography variant="h1">{unit.title}</Typography>
-        {unit.components}
-      </Paper>
+      {unit ? (
+        <Paper className={classes.paper}>
+          <Typography variant="h1">{unit.title}</Typography>
+          {unit.components}
+        </Paper>
+      ) : null}
 
       <div className={classes.buttons}>
         {unitIndex > 0 ? (
