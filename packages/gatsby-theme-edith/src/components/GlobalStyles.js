@@ -2,6 +2,8 @@ import React from "react"
 
 import { makeStyles } from "@material-ui/core/styles"
 
+import "katex/dist/katex.min.css"
+
 const monotypeFontStack = [
   "SFMono-Regular",
   "Consolas",
@@ -38,12 +40,18 @@ const useStyles = makeStyles(theme => ({
       code: {
         fontFamily: monotypeFontStack,
         borderRadius: "inherit",
-        overflow: "auto",
         padding: 20,
       },
       pre: {
         fontFamily: monotypeFontStack,
         borderRadius: "inherit",
+      },
+      'code[class*="language-"]': {
+        fontFamily: monotypeFontStack,
+        overflow: "auto",
+      },
+      'pre[class*="language-"]': {
+        fontFamily: monotypeFontStack,
         margin: 0,
         padding: 0,
       },
