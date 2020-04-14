@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "gatsby": "^2.20.0",
-    "gatsby-theme-edith": "*",
+    "gatsby-theme-edith": "0.2.0-alpha.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
