@@ -13,16 +13,12 @@ import GlobalStyles from "./GlobalStyles"
 
 import { ThemeProvider } from "@material-ui/core/styles"
 
+require("prism-themes/themes/prism-material-dark.css")
+
 import customTheme from "./theme"
 
 export default ({ children }) => {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)")
-
-  if (prefersDarkMode) {
-    require("prism-themes/themes/prism-material-dark.css")
-  } else {
-    require("prism-themes/themes/prism-material-light.css")
-  }
 
   const theme = React.useMemo(
     () =>
