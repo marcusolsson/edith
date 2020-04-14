@@ -256,7 +256,9 @@ export const query = graphql`
         title
       }
     }
-    allMarkdownRemark(filter: OR: [{ frontmatter: { type: "module" } }, { frontmatter: { type: "course" } }]) {
+    allMarkdownRemark(
+      filter: { frontmatter: { type: { in: ["module", "course"] } } }
+    ) {
       edges {
         node {
           frontmatter {
