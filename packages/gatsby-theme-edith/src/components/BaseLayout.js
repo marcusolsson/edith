@@ -13,9 +13,9 @@ import GlobalStyles from "./GlobalStyles"
 
 import { ThemeProvider } from "@material-ui/core/styles"
 
-require("prism-themes/themes/prism-material-dark.css")
-
 import customTheme from "./theme"
+
+require("prism-themes/themes/prism-material-dark.css")
 
 export default ({ children }) => {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)")
