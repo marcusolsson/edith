@@ -7526,6 +7526,13 @@ gatsby-page-utils@^0.1.1:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
+gatsby-plugin-draft@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-draft/-/gatsby-plugin-draft-0.0.5.tgz#ef41dba4edabab8be6690dcd6e7167ce5be32726"
+  integrity sha512-JzVJEe2dfLI3GuoQDZX1PqenXkBUyx+rbSeVgGS7U4l5i0X/5X5P4Fxs6VJSsdEO5/jemsQs0B0qjNGLyG7lPQ==
+  dependencies:
+    moment-timezone "^0.5.23"
+
 gatsby-plugin-intl@^0.3.3:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-intl/-/gatsby-plugin-intl-0.3.3.tgz#3a0e55e6641bfcb09fae20215b8f72e2a0ec3de4"
@@ -11510,6 +11517,18 @@ modify-values@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/modify-values/-/modify-values-1.0.1.tgz#b3939fa605546474e3e3e3c63d64bd43b4ee6022"
   integrity sha512-xV2bxeN6F7oYjZWTe/YPAy6MN2M+sL4u/Rlm2AHCIVGfo2p1yGmBHQ6vHehl4bRTZBdHu3TSkWdYgkwpYzAGSw==
+
+moment-timezone@^0.5.23:
+  version "0.5.28"
+  resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.5.28.tgz#f093d789d091ed7b055d82aa81a82467f72e4338"
+  integrity sha512-TDJkZvAyKIVWg5EtVqRzU97w0Rb0YVbfpqyjgu6GwXCAohVRqwZjf4fOzDE6p1Ch98Sro/8hQQi65WDXW5STPw==
+  dependencies:
+    moment ">= 2.9.0"
+
+"moment@>= 2.9.0":
+  version "2.25.3"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.25.3.tgz#252ff41319cf41e47761a1a88cab30edfe9808c0"
+  integrity sha512-PuYv0PHxZvzc15Sp8ybUCoQ+xpyPWvjOuK72a5ovzp2LI32rJXOiIfyoFoYvG3s6EwwrdkMyWuRiEHSZRLJNdg==
 
 moment@^2.24.0:
   version "2.24.0"
@@ -16449,6 +16468,11 @@ update-notifier@^3.0.1:
     latest-version "^5.0.0"
     semver-diff "^2.0.0"
     xdg-basedir "^3.0.0"
+
+upgrade@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/upgrade/-/upgrade-1.1.0.tgz#4a50875ec5c715d19379799f0590a0e796958f61"
+  integrity sha1-SlCHXsXHFdGTeXmfBZCg55aVj2E=
 
 uri-js@^4.2.2:
   version "4.2.2"
