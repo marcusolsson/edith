@@ -257,7 +257,10 @@ export const query = graphql`
       }
     }
     allMarkdownRemark(
-      filter: { frontmatter: { type: { in: ["module", "course"] } } }
+      filter: {
+        fields: { draft: { eq: false } }
+        frontmatter: { type: { in: ["module", "course"] } }
+      }
     ) {
       edges {
         node {

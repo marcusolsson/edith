@@ -26,6 +26,7 @@
     "babel-preset-gatsby": "^0.3.1",
     "clipboard-copy": "^3.1.0",
     "gatsby-image": "^2.3.1",
+    "gatsby-plugin-draft": "^0.0.5",
     "gatsby-plugin-intl": "^0.3.3",
     "gatsby-plugin-material-ui": "^2.1.6",
     "gatsby-plugin-page-creator": "^2.2.1",
@@ -50,7 +51,8 @@
     "rehype-react": "^5.0.0",
     "unist-builder": "^2.0.3",
     "unist-util-map": "^2.0.1",
-    "unist-util-visit": "^2.0.2"
+    "unist-util-visit": "^2.0.2",
+    "upgrade": "^1.1.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.5.0",
