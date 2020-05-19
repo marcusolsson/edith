@@ -8,7 +8,8 @@ const path = require("path")
 
 module.exports = {
   siteMetadata: {
-    title: "Edith.",
+    title: "My site",
+    logo: "",
   },
   plugins: [
     {

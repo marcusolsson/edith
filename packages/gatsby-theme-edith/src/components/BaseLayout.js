@@ -6,14 +6,13 @@ import blue from "@material-ui/core/colors/blue"
 import green from "@material-ui/core/colors/green"
 import { Helmet } from "react-helmet"
 
-import { useStaticQuery, graphql } from "gatsby"
-
 import CssBaseline from "@material-ui/core/CssBaseline"
 import GlobalStyles from "./GlobalStyles"
 
 import { ThemeProvider } from "@material-ui/core/styles"
 
 import customTheme from "./theme"
+import { useSiteMetadata } from "../hooks/useSiteMetadata"
 
 require("prism-themes/themes/prism-material-dark.css")
 
@@ -102,22 +101,12 @@ export default ({ children }) => {
     [prefersDarkMode]
   )
 
-  const data = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `
-  )
+  const { title } = useSiteMetadata()
 
   return (
     <ThemeProvider theme={theme}>
       <ThemeProvider theme={customTheme}>
-        <Helmet title={data.site.siteMetadata.title} />
+        <Helmet title={title} />
         <React.Fragment>
           <CssBaseline />
           <GlobalStyles>{children}</GlobalStyles>

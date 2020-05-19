@@ -1,10 +1,10 @@
 import React from "react"
 
 import { makeStyles } from "@material-ui/core/styles"
-import { useStaticQuery, graphql } from "gatsby"
 
 import Typography from "@material-ui/core/Typography"
 import Link from "./Link"
+import { useSiteMetadata } from "../hooks/useSiteMetadata"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -21,21 +21,11 @@ const useStyles = makeStyles(theme => ({
 
 export default props => {
   const classes = useStyles()
-  const data = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `
-  )
+  const { title, logo } = useSiteMetadata()
 
   return (
     <Typography className={classes.root}>
-      <Link to="/">{data.site.siteMetadata.title}</Link>
+      <Link to="/">{logo ? <img src={logo} alt={title} /> : title}</Link>
     </Typography>
   )
 }
