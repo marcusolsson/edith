@@ -5,5 +5,8 @@
  */
 
 module.exports = {
-  plugins: ["gatsby-theme-edith"]
+  siteMetadata: {
+    title: "Edith.",
+  },
+  plugins: ["gatsby-theme-edith"],
 };
