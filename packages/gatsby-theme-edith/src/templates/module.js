@@ -1,5 +1,6 @@
 import React from "react"
 import { useState, useEffect } from "react"
+import { Helmet } from "react-helmet"
 import parseModule from "../parse/parseModule"
 
 import { graphql } from "gatsby"
@@ -11,6 +12,7 @@ import Stepper from "@material-ui/core/Stepper"
 import Step from "@material-ui/core/Step"
 import StepButton from "@material-ui/core/StepButton"
 
+import { useSiteMetadata } from "../hooks/useSiteMetadata"
 import ModuleLayout from "../components/ModuleLayout"
 import { Link, navigate } from "../components/Link"
 import Paper from "@material-ui/core/Paper"
@@ -44,6 +46,7 @@ const useStyles = makeStyles(theme => ({
  * Template for a module page.
  */
 export default props => {
+  const site = useSiteMetadata()
   const classes = useStyles()
   const intl = useIntl()
 
@@ -92,6 +95,16 @@ export default props => {
           orientation="vertical"
           style={{ padding: "1em" }}
         >
+          <Helmet>
+            <title>
+              {module.title} | {site.title}
+            </title>
+            <link
+              rel="canonical"
+              href={`${site.url}/modules${module.fields.slug}`}
+            />
+          </Helmet>
+
           {module.units.map((unit, index) => (
             <Step key={index}>
               <StepButton

@@ -7,6 +7,8 @@
 module.exports = {
   siteMetadata: {
     title: "Edith.",
+    description: "An open learning platform based on Gatsby.",
+    siteUrl: "https://marcusolsson.github.io/edith",
   },
   plugins: ["gatsby-theme-edith"],
 };

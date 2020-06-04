@@ -101,12 +101,25 @@ export default ({ children }) => {
     [prefersDarkMode]
   )
 
-  const { title } = useSiteMetadata()
+  const { title, description, url } = useSiteMetadata()
 
   return (
     <ThemeProvider theme={theme}>
       <ThemeProvider theme={customTheme}>
-        <Helmet title={title} />
+        <Helmet title={title}>
+          <link rel="canonical" href={url} />
+          <title>{title}</title>
+          <meta name="description" content={description} />
+          {url && <meta property="og:url" content={url} />}
+          {title && <meta property="og:title" content={title} />}
+          {description && (
+            <meta property="og:description" content={description} />
+          )}
+          {title && <meta name="twitter:title" content={title} />}
+          {description && (
+            <meta name="twitter:description" content={description} />
+          )}
+        </Helmet>
         <React.Fragment>
           <CssBaseline />
           <GlobalStyles>{children}</GlobalStyles>

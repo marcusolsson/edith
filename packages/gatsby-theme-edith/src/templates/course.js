@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 
 import { graphql } from "gatsby"
 import { useIntl } from "gatsby-plugin-intl"
@@ -13,12 +14,14 @@ import ModuleCard from "../components/ModuleCard"
 
 import parseCourse from "../parse/parseCourse"
 import parseModule from "../parse/parseModule"
+import { useSiteMetadata } from "../hooks/useSiteMetadata"
 import "katex/dist/katex.min.css"
 
 /**
  * Template for a course page.
  */
 export default ({ data }) => {
+  const site = useSiteMetadata()
   const intl = useIntl()
 
   const courseNode = data.course
@@ -42,6 +45,15 @@ export default ({ data }) => {
 
   return (
     <DefaultLayout>
+      <Helmet>
+        <title>
+          {course.title} | {site.title}
+        </title>
+        <link
+          rel="canonical"
+          href={`${site.url}/courses${courseNode.fields.slug}`}
+        />
+      </Helmet>
       <Typography variant="overline">
         {intl.formatMessage({ id: "text.course" })}
       </Typography>

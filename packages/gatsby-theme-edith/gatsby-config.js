@@ -10,6 +10,8 @@ module.exports = {
   siteMetadata: {
     title: "My site",
     logo: "",
+    siteUrl: "",
+    description: "",
   },
   plugins: [
     {
@@ -61,6 +63,8 @@ module.exports = {
       },
     },
     "gatsby-plugin-draft",
+    "gatsby-plugin-robots-txt",
+    `gatsby-plugin-sitemap`,
   ],
   pathPrefix: "/edith",
 }
