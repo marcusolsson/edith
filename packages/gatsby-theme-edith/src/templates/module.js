@@ -62,6 +62,8 @@ export default props => {
   const unitIndex = props.pageContext.index
   const unit = module.units[unitIndex]
 
+  console.log(unitIndex)
+
   const prevUnit = () => {
     if (unitIndex > 0) {
       navigate(`/modules${module.fields.slug}${unitIndex}`)
@@ -84,74 +86,75 @@ export default props => {
   }
 
   return (
-    <ModuleLayout
-      title={module.title}
-      backTo="/"
-      drawerList={
-        <Stepper
-          connector={null}
-          nonLinear
-          activeStep={unitIndex}
-          orientation="vertical"
-          style={{ padding: "1em" }}
-        >
-          <Helmet>
-            <title>
-              {module.title} | {site.title}
-            </title>
-            <link
-              rel="canonical"
-              href={`${site.url}/modules${module.fields.slug}`}
-            />
-          </Helmet>
-
-          {module.units.map((unit, index) => (
-            <Step key={index}>
-              <StepButton
-                component={Link}
-                to={`/modules${module.fields.slug}${index + 1}`}
-                completed={index < unitIndex}
-                style={{
-                  marginBottom: "1em",
-                }}
-              >
-                {unit.title}
-              </StepButton>
-            </Step>
-          ))}
-        </Stepper>
-      }
-    >
-      {unit ? (
-        <Paper className={classes.paper}>
-          <Typography variant="h1">{unit.title}</Typography>
-          {unit.components}
-        </Paper>
-      ) : null}
-
-      <div className={classes.buttons}>
-        {unitIndex > 0 ? (
-          <Button variant="contained" onClick={prevUnit}>
-            {intl.formatMessage({ id: "unit.back" })}
-          </Button>
-        ) : null}
-        <div />
-        {unitIndex < module.units.length - 1 ? (
-          <Button variant="contained" color="primary" onClick={nextUnit}>
-            {intl.formatMessage({ id: "unit.next" })}
-          </Button>
-        ) : (
-          <Button
-            variant="contained"
-            component={Link}
-            to="/"
-            className={classes.buttonDone}
+    <>
+      <Helmet>
+        <title>
+          {module.title} | {site.title}
+        </title>
+        <link
+          rel="canonical"
+          href={`${site.url}/modules${module.fields.slug}`}
+        />
+      </Helmet>
+      <ModuleLayout
+        title={module.title}
+        backTo="/"
+        drawerList={
+          <Stepper
+            connector={null}
+            nonLinear
+            activeStep={unitIndex}
+            orientation="vertical"
+            style={{ padding: "1em" }}
           >
-            {intl.formatMessage({ id: "unit.done" })}
-          </Button>
-        )}
-      </div>
-    </ModuleLayout>
+            {module.units.map((unit, index) => (
+              <Step key={index}>
+                <StepButton
+                  component={Link}
+                  to={`/modules${module.fields.slug}${index + 1}`}
+                  completed={index < unitIndex}
+                  style={{
+                    marginBottom: "1em",
+                  }}
+                >
+                  {unit.title}
+                </StepButton>
+              </Step>
+            ))}
+          </Stepper>
+        }
+      >
+        {unit ? (
+          <Paper className={classes.paper}>
+            <Typography variant="h1">{unit.title}</Typography>
+            {unit.components}
+          </Paper>
+        ) : null}
+
+        <div className={classes.buttons}>
+          {unitIndex > 0 ? (
+            <Button variant="contained" onClick={prevUnit}>
+              {intl.formatMessage({ id: "unit.back" })}
+            </Button>
+          ) : null}
+          <div />
+          {unitIndex < module.units.length - 1 ? (
+            <Button variant="contained" color="primary" onClick={nextUnit}>
+              {intl.formatMessage({ id: "unit.next" })}
+            </Button>
+          ) : (
+            <Button
+              variant="contained"
+              component={Link}
+              to="/"
+              className={classes.buttonDone}
+            >
+              {intl.formatMessage({ id: "unit.done" })}
+            </Button>
+          )}
+        </div>
+      </ModuleLayout>
+    </>
   )
 }
 
