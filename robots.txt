@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://marcusolsson.github.io/sitemap.xml
+Host: https://marcusolsson.github.io
